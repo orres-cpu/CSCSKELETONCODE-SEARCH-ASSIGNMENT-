@@ -24,7 +24,14 @@ public class BinarySearch {
         }
         return index;
     }
-    //ToDo 2: Call the above method and test the algorithm  
-    // provide time and space analysis 
+    //O (log n) best case o(1)
+    public static void main(String[] args)
+    {
+        int[] arr = {2, 4, 8, 16, 32, 64, 128, 256, 512, 1024};
+
+        int result = runBinarySearchIteratively(arr, 16, 0, arr.length - 1);
+        System.out.println("Index of 16: " + result);
+    }
+
 
 }
